@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "@germinare/utils": "https://stdutilssap.z13.web.core.windows.net/germinare-utils.js",
+    "@germinare/lib-front": "https://stdlibfrontsap.z13.web.core.windows.net/germinare-lib-front.js",
+    "@germinare/navbar": "https://stdnavbarsap.z13.web.core.windows.net/germinare-navbar.js",
+    "@germinare/student-data-front": "https://stdstudentsdatafrontsap.z13.web.core.windows.net/germinare-student-data-front.js",
+    "@germinare/calendar-front": "https://stdcalendarfrontsap.z13.web.core.windows.net/germinare-calendar-front.js",
+    "@germinare/discipline-front": "https://stddisciplinefrontsap.z13.web.core.windows.net/germinare-discipline-front.js",
+    "@germinare/library-front": "https://stdlibraryfrontsap.z13.web.core.windows.net/germinare-library-front.js",
+    "@germinare/school-library-front": "https://stdschoollibraryfrontsap.z13.web.core.windows.net/germinare-school-library-front.js"
+  }
+}
