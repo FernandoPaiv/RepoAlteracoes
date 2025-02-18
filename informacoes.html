@@ -5,66 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto GitHub - Perfis dos Alunos</title>
     <style>
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #eef2f3;
             margin: 0;
             padding: 0;
+            color: #333;
+            background-image: url('https://wallpapers.com/images/hd/solar-eclipse-hd-4k-space-585bmk4grpijoamp.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
         }
+
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(90deg, #08111d,rgb(7, 48, 91));
             color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        main {
             padding: 20px;
             text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
+
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .sobre{
+            color: white;
+            padding: 50px;
+            background-color: #000b2d;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+
+        }
+
+        section h2{
+            color: white;
+        }
+
         .perfil-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 30px;
         }
+
         .perfil {
-            background: white;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #000b2d;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
             text-align: center;
-            width: 250px;
+            width: 30%;
+            min-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .perfil p, h3{
+            color: white;
+            text-decoration: none;
+        }
+
+        .perfil:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
         .foto {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #007bff;
+            box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
         }
+
         .btn {
-            background-color: #4CAF50;
+            background: linear-gradient(90deg, #03162a, #383f45);
             color: white;
-            padding: 10px 20px;
+            padding: 30px 100px;
             border: none;
             cursor: pointer;
             text-align: center;
             display: inline-block;
-            margin-top: 10px;
-            border-radius: 5px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin-bottom: 50px;
+            font-size: 20px;
         }
+
         .btn:hover {
-            background-color: #45a049;
+            background: linear-gradient(90deg, #062a51, #383f45);
+            transform: scale(1.05);
         }
+
         footer {
-            background-color: #333;
+            background-color: #222;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 0.9em;
         }
+
     </style>
 </head>
 <body>
@@ -74,9 +128,9 @@
 </header>
 
 <main>
-    <section>
+    <section class="sobre">
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criaÃ§Ã£o de branches, commits, Pull Requests e revisÃµes de cÃ³digo.</p>
+        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisãos de código.</p>
     </section>
 
     <section>
@@ -113,25 +167,29 @@
                 <p><a href="https://github.com/FernandoPaiv/RepoAlteracoes" target="_blank">GitHub</a></p>
             </div>
         </div>
-        div class="perfil-container">
-            <div class="perfil">
-                <img class="foto" src="informacoes_files/Captura de tela 2025-02-18 091102.png" alt="Foto do Aluno">
-                <h3>Pedro Frossard</h3>
-                <p>Curso: TECH</p>
-                <p><a href="https://github.com/PedroFrossard123" target="_blank">GitHub</a></p>
+            <div class="perfil-container">
+                <div class="perfil">
+                    <img class="foto" src="https://personstorageprod.blob.core.windows.net/personcontainer/2024_1D_TECH_Guilherme_da_Silva_Costa.JPG-50p.jpg?sv=2021-10-04&st=2025-02-18T18%3A55%3A15Z&se=2025-02-18T19%3A05%3A15Z&sr=b&sp=r&sig=d6FI3nM5k2RK4%2BzlAs6Gg8j977T6uASw%2B%2F974xFZt%2Bs%3D&rscd=filename*%3DUTF-8%27%272024_1D_TECH_Guilherme_da_Silva_Costa.JPG-50p.jpg">
+                    <h3>Guilherme Costa</h3>
+                    <p>Curso: Analise de Dados</p>
+                    <p><a href="https://github.com/FernandoPaiv/RepoAlteracoes" target="_blank">GitHub</a></p>
+                </div>
             </div>
         </div>
         <div class="perfil-container">
             <div class="perfil">
-                <img class="foto" src="./2024_1D_TECH_Guilherme_da_Silva_Costa.JPG-50p.jpg" alt="Foto do Aluno">
-                <h3>Guilherme Costa</h3>
+                <img class="foto" src="https://personstorageprod.blob.core.windows.net/personcontainer/2024_1D_TECH_Pedro_Hnerique_Gome_Frossard.JPG-50p.jpg?sv=2021-10-04&st=2025-02-18T18%3A55%3A50Z&se=2025-02-18T19%3A05%3A50Z&sr=b&sp=r&sig=eMX%2FdJHSRwvDghUzRAiUhn145sQAGBYWMO0CBLB2S8c%3D&rscd=filename*%3DUTF-8%27%272024_1D_TECH_Pedro_Hnerique_Gome_Frossard.JPG-50p.jpg" alt="Foto do Aluno">
+                <h3>Guilherme Frossard</h3>
                 <p>Curso: Analise de Dados</p>
                 <p><a href="https://github.com/FernandoPaiv/RepoAlteracoes" target="_blank">GitHub</a></p>
             </div>
         </div>
-        <div class="perfil-container">
+
+        <div class="perfil-container" id="info">
             <div class="perfil">
-        <p>Cada aluno deve copiar e editar um bloco acima com suas informaÃ§Ãµes.</p>
+                <p>Cada aluno deve copiar e editar um bloco acima com suas informações.</p>
+        
+        
     </section>
 
     <button class="btn">Saiba mais sobre GitHub</button>
